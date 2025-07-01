@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -14,22 +17,25 @@
 body{
     background-color: black;
     padding: 120px;
+    margin: 0;
 }
 
 #TopNavbar {
+    margin-top: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    margin: 25px 50px 25px 100px;
-    backdrop-filter: blur(8px);
+    margin: 0px 50px 25px 100px;
+    padding: 15px 18px; 
+    backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000; 
 }
 
 #Logo{
-    height: 4rem;
-    width: 4rem;
+    height: 4.2rem;
+    width: 4.2rem;
     border-radius: 15px;
     transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
@@ -41,8 +47,8 @@ body{
 .nav_utils {
     display: inline-block;
     color: rgba(202, 199, 199, 0.735);
-    margin: 0 15px;
-    font-size: 1.25rem;
+    margin: 0 18px; 
+    font-size: 1.3rem; 
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -111,4 +117,52 @@ aside {
     margin-top: -66px;
     float: right;
     border-radius: 20px;
+}
+span{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #00b7eb;
+}
+h2{
+    font-size: 3rem;
+}
+button{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #0f85a6e5;
+    border: solid #1995b8c1;
+    font-size: 25px;
+    font-weight: 500;
+    transition: transform 0.3s ease ,color 0.3s ease, background-color 0.3s ease;
+} 
+button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color:#1995b8c1 ;
+}
+.About{
+    margin-top: 100px;
+    margin-left:3rem;
+    margin-right:3rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+.About h2{
+    font-size: 4rem !important;
+    font-weight: 600;
+    text-align: center;
+}
+.About p{
+    color: white;
+    font-size:1.5rem;
+}
+.About h3{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
 }
