@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+    padding: 120px;
+}
+
+#TopNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 25px 50px 25px 100px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000; 
+}
+
+#Logo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+#Logo:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #00b7eb, 0 0 20px #00b7eb;
+}
+
+.nav_utils {
+    display: inline-block;
+    color: rgba(202, 199, 199, 0.735);
+    margin: 0 15px;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav_utils:hover {
+    color: #66d9ff;
+    transform: scale(1.2);
+}
+
+aside {
+    background-color: #1a1a1a;
+    width: 60px; 
+    height: 15rem; 
+    position: fixed;
+    top: 13rem;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius:15px ;
+}
+#SideNavbar {
+    gap: 3rem; 
+    padding: 20px 0; 
+}
+
+#SideNavbar a {
+    color: white;
+    font-size: 2rem;
+    background-color: transparent;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;}
+
+#SideNavbar a:hover {
+    transform: scale(1.2);
+    color: #66d9ff;
+}
+
+#Instagram:hover {
+    color: #e83420d3 !important; 
+}
+#Linkdin:hover{
+    color: #082eeb !important;
+}
+#Github:hover{
+    color: #800080 !important;
+}
+#Gmail:hover{
+    color: #ff6600 !important;
+}
+#SideNavbar i {
+    background-color: transparent;
+}
+
+#Introduction{
+    color: white;
+    margin-top: 100px;
+    
+}
+#Introduction img{
+    height: 25%;
+    width: 25%; 
+    margin-top: -66px;
+    float: right;
+    border-radius: 20px;
+}
